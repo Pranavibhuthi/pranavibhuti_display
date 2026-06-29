@@ -1,0 +1,153 @@
+@import "tailwindcss";
+
+@theme {
+  --color-deep-navy: #020617;
+  --color-surface: #0f172a;
+  --color-line: #334155;
+  --color-text-muted: #94a3b8;
+  --color-ocean-blue: #0ea5e9;
+  --color-vibrant-green: #10b981;
+}
+
+/* Global Dark Base Styles */
+html, body {
+  background-color: #020617; /* --deep-navy */
+  color: #f8fafc;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+}
+
+/* Custom design styles for Sophisticated Dark */
+.glass-card {
+  background: rgba(15, 23, 42, 0.6) !important;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(51, 65, 85, 0.5) !important;
+  border-radius: 1rem;
+}
+
+.ai-glow {
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.2);
+  border: 1px solid #10b981 !important;
+}
+
+/* Patient Portal Component & Modal Overrides */
+#patient-portal-container .bg-white {
+  background-color: #0f172a !important; /* bg-slate-900 */
+  border-color: #1e293b !important;    /* border-slate-800 */
+  color: #f8fafc !important;
+}
+
+#patient-portal-container .bg-slate-50,
+#patient-portal-container .bg-slate-100 {
+  background-color: #020617 !important; /* deep navy bg-slate-950 */
+  border-color: #1e293b !important;
+  color: #f8fafc !important;
+}
+
+#patient-portal-container .text-slate-900,
+#patient-portal-container .text-slate-800,
+#patient-portal-container .text-slate-700 {
+  color: #f8fafc !important;
+}
+
+#patient-portal-container .text-slate-600,
+#patient-portal-container .text-slate-500 {
+  color: #94a3b8 !important;
+}
+
+#patient-portal-container .border-slate-100,
+#patient-portal-container .border-slate-200 {
+  border-color: #1e293b !important;
+}
+
+#patient-portal-container select,
+#patient-portal-container input[type="text"],
+#patient-portal-container input[type="number"],
+#patient-portal-container input[type="date"],
+#patient-portal-container input[type="password"],
+#patient-portal-container textarea {
+  background-color: #020617 !important;
+  border-color: #334155 !important;
+  color: #f8fafc !important;
+}
+
+#patient-portal-container select option {
+  background-color: #0f172a !important;
+  color: #f8fafc !important;
+}
+
+/* Dynamic Alert/Status Badges Overrides */
+#patient-portal-container .bg-sky-50 {
+  background-color: rgba(14, 165, 233, 0.15) !important;
+  color: #38bdf8 !important;
+  border: 1px solid rgba(14, 165, 233, 0.2) !important;
+}
+#patient-portal-container .bg-emerald-50 {
+  background-color: rgba(16, 185, 129, 0.15) !important;
+  color: #34d399 !important;
+  border: 1px solid rgba(16, 185, 129, 0.2) !important;
+}
+#patient-portal-container .bg-purple-50 {
+  background-color: rgba(168, 85, 247, 0.15) !important;
+  color: #c084fc !important;
+  border: 1px solid rgba(168, 85, 247, 0.2) !important;
+}
+#patient-portal-container .bg-amber-50 {
+  background-color: rgba(245, 158, 11, 0.15) !important;
+  color: #fbbf24 !important;
+  border: 1px solid rgba(245, 158, 11, 0.2) !important;
+}
+#patient-portal-container .bg-rose-50 {
+  background-color: rgba(244, 63, 94, 0.15) !important;
+  color: #fb7185 !important;
+  border: 1px solid rgba(244, 63, 94, 0.2) !important;
+}
+
+#patient-portal-container .bg-sky-100 {
+  background-color: rgba(14, 165, 233, 0.25) !important;
+  color: #38bdf8 !important;
+}
+#patient-portal-container .bg-emerald-100 {
+  background-color: rgba(16, 185, 129, 0.25) !important;
+  color: #34d399 !important;
+}
+#patient-portal-container .bg-purple-100 {
+  background-color: rgba(168, 85, 247, 0.25) !important;
+  color: #c084fc !important;
+}
+#patient-portal-container .bg-amber-100 {
+  background-color: rgba(245, 158, 11, 0.25) !important;
+  color: #fbbf24 !important;
+}
+#patient-portal-container .bg-rose-100 {
+  background-color: rgba(244, 63, 94, 0.25) !important;
+  color: #fb7185 !important;
+}
+
+/* Scrollbar customizations */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0ea5e9;
+}
+
+@keyframes scan {
+  0% {
+    top: 0%;
+  }
+  50% {
+    top: 100%;
+  }
+  100% {
+    top: 0%;
+  }
+}

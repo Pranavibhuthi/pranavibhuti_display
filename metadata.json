@@ -1,0 +1,6 @@
+{
+  "name": "PRANAVIBHUTI Portal",
+  "description": "An advanced patient-doctor healthcare ecosystem featuring secure Aadhaar & Health Card MFA, AI Symptom Checking with medical history cross-referencing, digital locker, and telehealth.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
